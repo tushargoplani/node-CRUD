@@ -5,8 +5,8 @@ const validator = require('../validator');
 const router = express.Router();
 
 router.get("/", getPosts);
-router.post("/create-user",validator.createUserValidator, createUser);
-router.delete("/delete-user", deleteUser);
-router.put("/update-user", updateUser);
+router.post("/",validator.createUserValidator, createUser);
+router.delete("/", deleteUser);
+router.put("/", updateUser);
 
 module.exports = router;
